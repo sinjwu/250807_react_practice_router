@@ -10,7 +10,7 @@ const User = () => {
         const res = await fetch(
           `https://jsonplaceholder.typicode.com/users/${id}`
         );
-        const date = await res.json();
+        const data = await res.json();
         setUser(data);
       } catch (error) {
         console.error(error);

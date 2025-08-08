@@ -4,7 +4,6 @@ import About from "./pages/about";
 import User from "./pages/user";
 import Users from "./pages/users";
 import Layout from "./components/Layout";
-import AnotherLayout from "./components/AnotherLayout";
 
 const App = () => {
   return (
@@ -13,8 +12,6 @@ const App = () => {
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-        </Route>
-        <Route element={<AnotherLayout />}>
           <Route path="/users" element={<Users />} />
           <Route path="/user/:id" element={<User />} />
         </Route>
